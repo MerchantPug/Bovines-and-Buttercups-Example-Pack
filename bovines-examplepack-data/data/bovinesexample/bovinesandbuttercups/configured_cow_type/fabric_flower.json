@@ -1,0 +1,35 @@
+{
+    "type": "bovinesandbuttercups:moobloom",
+    "flower": {
+        "flower_type": "bovinesexample:fabric_flower"
+    },
+    "bud": {
+        "flower_type": "bovinesexample:fabric_flower"
+    },
+    "color": "#ebe2ce",
+    "nectar_texture": "bovinesexample:bovinesandbuttercups/item/fabric_nectar_bowl",
+    "spawn_biomes": "minecraft:plains",
+    "natural_spawn_weight": 1,
+    "nectar_effect": {
+        "effect": "minecraft:fire_resistance",
+        "duration": 12000
+    },
+    "thunder_conversion_types": [
+      {
+        "type": "bovinesexample:quilt_flower",
+        "weight": 1
+      }
+    ],
+    "breeding_conditions": {
+        "predicates": [
+            {
+                "blocks": [
+                    "minecraft:white_terracotta",
+                    "minecraft:orange_terracotta",
+                    "minecraft:lily_of_the_valley"
+                ],
+                "operation": "and"
+            }
+        ]
+    }
+}

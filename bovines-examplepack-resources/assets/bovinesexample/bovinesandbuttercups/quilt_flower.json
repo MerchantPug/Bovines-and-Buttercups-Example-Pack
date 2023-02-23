@@ -1,0 +1,10 @@
+{
+    "type": "bovinesandbuttercups:flower",
+    "linked_block_type": "bovinesexample:quilt_flower",
+    "variants": {
+      "": {
+        "model": "bovinesexample:block/quilt_flower"
+      }
+    },
+    "inventory": "bovinesexample:quilt_flower"
+}

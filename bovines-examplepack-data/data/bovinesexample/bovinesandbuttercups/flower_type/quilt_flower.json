@@ -1,0 +1,11 @@
+{
+    "flower_model": "bovinesexample:quilt_flower",
+    "stew_effect": {
+      "effect": "minecraft:night_vision",
+      "duration": 100
+    },
+    "dye_craft_result": {
+      "id": "minecraft:magenta_dye",
+      "Count": 1
+    }
+}

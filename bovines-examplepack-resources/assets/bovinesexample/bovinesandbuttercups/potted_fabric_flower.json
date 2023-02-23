@@ -1,0 +1,9 @@
+{
+    "type": "bovinesandbuttercups:potted_flower",
+    "linked_block_type": "bovinesexample:fabric_flower",
+    "variants": {
+      "": {
+        "model": "bovinesexample:block/potted_fabric_flower"
+      }
+    }
+}

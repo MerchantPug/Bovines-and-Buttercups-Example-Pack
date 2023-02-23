@@ -1,0 +1,9 @@
+{
+    "type": "bovinesandbuttercups:potted_mushroom",
+    "linked_block_type": "bovinesexample:forge_mushroom",
+    "variants": {
+      "": {
+        "model": "bovinesexample:block/potted_forge_mushroom"
+      }
+    }
+}

@@ -1,0 +1,33 @@
+{
+    "type": "bovinesandbuttercups:moobloom",
+    "flower": {
+        "flower_type": "bovinesexample:quilt_flower"
+    },
+    "bud": {
+        "flower_type": "bovinesexample:quilt_flower"
+    },
+    "color": "#dc29dd",
+    "nectar_texture": "bovinesexample:bovinesandbuttercups/item/quilt_nectar_bowl",
+    "nectar_effect": {
+        "effect": "minecraft:night_vision",
+        "duration": 12000
+    },
+    "thunder_conversion_types": [
+      {
+        "type": "bovinesexample:fabric_flower",
+        "weight": 1
+      }
+    ],
+    "breeding_conditions": {
+        "predicates": [
+            {
+                "blocks": [
+                    "minecraft:pink_tulip",
+                    "minecraft:peony",
+                    "minecraft:cornflower"
+                ],
+                "operation": "and"
+            }
+        ]
+    }
+}

@@ -1,0 +1,20 @@
+{
+    "type": "bovinesandbuttercups:mooshroom",
+    "mushroom": {
+      "mushroom_type": "bovinesexample:forge_mushroom"
+    },
+    "color": "#555969",
+    "can_eat_flowers": true,
+    "breeding_conditions": {
+        "predicates": [
+            {
+                "blocks": [
+                    "minecraft:raw_iron_block",
+                    "minecraft:anvil",
+                    "minecraft:brown_mushroom"
+                ],
+                "operation": "and"
+            }
+        ]
+    }
+}

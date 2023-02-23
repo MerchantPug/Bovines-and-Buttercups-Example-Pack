@@ -1,0 +1,11 @@
+{
+    "flower_model": "bovinesexample:fabric_flower",
+    "stew_effect": {
+      "effect": "minecraft:fire_resistance",
+      "duration": 80
+    },
+    "dye_craft_result": {
+      "id": "minecraft:white_dye",
+      "Count": 1
+    }
+}
