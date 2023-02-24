@@ -1,7 +1,5 @@
 {
     "huge_structures": [
-      "bovinesexample:forge_mushroom_small",
-      "bovinesexample:forge_mushroom_medium",
-      "bovinesexample:forge_mushroom_large"
+      "bovinesexample:forge_mushroom"
     ]
 }

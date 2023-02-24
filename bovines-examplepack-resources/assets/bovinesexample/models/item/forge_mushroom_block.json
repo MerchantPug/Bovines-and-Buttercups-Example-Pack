@@ -1,6 +1,3 @@
 {
-    "parent": "minecraft:item/generated",
-    "textures": {
-      "layer0": "bovinesexample:block/forge_mushroom"
-    }
+    "parent": "bovinesexample:block/forge_mushroom_block_inventory"
 }

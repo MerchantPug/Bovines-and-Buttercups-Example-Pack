@@ -1,6 +1,6 @@
 {
-    "parent": "minecraft:block/cross",
+    "parent": "minecraft:block/template_single_face",
     "textures": {
-      "cross": "bovinesexample:block/forge_mushroom"
+      "texture": "bovinesexample:block/forge_mushroom_block"
     }
 }

@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "bovinesexample:block/forge_mushroom_block"
+  }
+}
