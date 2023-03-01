@@ -6,15 +6,57 @@
     "color": "#555969",
     "can_eat_flowers": true,
     "breeding_conditions": {
-        "predicates": [
-            {
-                "blocks": [
-                    "minecraft:raw_iron_block",
-                    "minecraft:anvil",
-                    "minecraft:brown_mushroom"
-                ],
-                "operation": "and"
-            }
-        ]
+        "condition": {
+            "type": "bovinesandbuttercups:or",
+            "conditions": [
+                {
+                    "type": "bovinesandbuttercups:blocks_in_radius",
+                    "radius": 6.0,
+                    "offset": [
+                      0,
+                      4,
+                      0
+                    ],
+                    "block_conditions": [
+                        {
+                            "type": "bovinesandbuttercups:block_location",
+                            "location": "minecraft:raw_iron_block"
+                        },
+                        {
+                            "type": "bovinesandbuttercups:block_location",
+                            "location": "minecraft:anvil"
+                        },
+                        {
+                            "type": "bovinesandbuttercups:block_location",
+                            "location": "minecraft:brown_mushroom"
+                        }
+                    ]
+                },
+                {
+                    "type": "bovinesandbuttercups:blocks_in_radius",
+                    "radius": 6.0,
+                    "offset": [
+                      0,
+                      4,
+                      0
+                    ],
+                    "block_conditions": [
+                        {
+                            "type": "bovinesandbuttercups:or",
+                            "conditions": [
+                                {
+                                    "type": "bovinesandbuttercups:custom_mushroom_type",
+                                    "location": "bovinesexample:forge_mushroom"
+                                },  
+                                {   
+                                    "type": "bovinesandbuttercups:custom_potted_mushroom_type",
+                                    "location": "bovinesexample:forge_mushroom"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
     }
 }
