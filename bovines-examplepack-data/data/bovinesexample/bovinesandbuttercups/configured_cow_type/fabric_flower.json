@@ -21,15 +21,88 @@
       }
     ],
     "breeding_conditions": {
-        "predicates": [
-            {
-                "blocks": [
-                    "minecraft:white_terracotta",
-                    "minecraft:orange_terracotta",
-                    "minecraft:lily_of_the_valley"
-                ],
-                "operation": "and"
+        "condition": {
+            "type": "bovinesandbuttercups:and",
+            "conditions": [
+                {
+                    "type": "bovinesandbuttercups:or",
+                    "conditions": [
+                        {
+                            "type": "bovinesandbuttercups:predicate",
+                            "predicate": "bovinesexample:is_fabric_moobloom"
+                        },
+                        {
+                            "type": "bovinesandbuttercups:predicate",
+                            "predicate": "bovinesexample:is_quilt_moobloom"
+                        }
+                    ]
+                },
+                {
+                    "type": "bovinesandbuttercups:or",
+                    "conditions": [
+                        {
+                            "type": "bovinesandbuttercups:blocks_in_radius",
+                            "radius": 6.0,
+                            "offset": [
+                              0,
+                              4,
+                              0
+                            ],
+                            "block_conditions": [
+                                {
+                                    "type": "bovinesandbuttercups:block_location",
+                                    "location": "minecraft:white_terracotta"
+                                },
+                                {
+                                    "type": "bovinesandbuttercups:block_location",
+                                    "location": "minecraft:orange_terracotta"
+                                },
+                                {
+                                    "type": "bovinesandbuttercups:block_location",
+                                    "location": "minecraft:lily_of_the_valley"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "bovinesandbuttercups:blocks_in_radius",
+                            "radius": 6.0,
+                            "offset": [
+                              0,
+                              4,
+                              0
+                            ],
+                            "block_conditions": [
+                                {
+                                    "type": "bovinesandbuttercups:or",
+                                    "conditions": [
+                                        {
+                                            "type": "bovinesandbuttercups:custom_flower_type",
+                                            "location": "bovinesexample:fabric_flower"
+                                        },  
+                                        {   
+                                            "type": "bovinesandbuttercups:custom_potted_flower_type",
+                                            "location": "bovinesexample:fabric_flower"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "other_condition": {
+                "type": "bovinesandbuttercups:or",
+                "conditions": [
+                    {
+                        "type": "bovinesandbuttercups:predicate",
+                        "predicate": "bovinesexample:is_fabric_moobloom"
+                    },
+                    {
+                        "type": "bovinesandbuttercups:predicate",
+                        "predicate": "bovinesexample:is_quilt_moobloom"
+                    }
+                ]
             }
-        ]
+        }
     }
 }
